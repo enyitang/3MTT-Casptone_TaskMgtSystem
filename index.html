@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+    <h1>Task Manager System</h1>
+    <h2>Design by: Enyitang Joseph(Cohort_2 Fellow 3MTT)</h2>
+    <div id="tasks"></div>
+    <script>
+        // Example: Fetch tasks
+        fetch("http://localhost:5000/api/tasks", {
+            headers: { Authorization: `Bearer <your-token>` },
+        })
+            .then((res) => res.json())
+            .then((data) => console.log(data));
+    </script>
+</body>
+</html>
